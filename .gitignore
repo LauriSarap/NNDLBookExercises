@@ -1,3 +1,9 @@
+# Custom
+C++Implementations/bin/*
+C++Implementations/bin-int/*
+*.sln
+*.vcxproj
+
 # Prerequisites
 *.d
 
