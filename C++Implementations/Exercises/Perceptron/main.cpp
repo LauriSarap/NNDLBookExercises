@@ -7,8 +7,8 @@ int main()
 {
     Perceptron perceptron(2, 0, 0.01);
 
-    std::vector<std::vector<double>> inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
-    std::vector<double> outputs = {0, 0, 0, 1};
+    std::vector<std::vector<double>> inputs = {{-3, 2}, {-2, 4}, {-1, 6}, {1, 6}, {2, 4}, {3, 2}};
+    std::vector<double> outputs = {0, 0, 0, 1, 1, 1};
 
     for (int i = 0; i < 100; ++i)
     { 

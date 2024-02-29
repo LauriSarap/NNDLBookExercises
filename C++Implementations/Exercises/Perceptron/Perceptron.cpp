@@ -37,5 +37,5 @@ void Perceptron::Train(const std::vector<double>& x_train, const double& y_train
 
 double Perceptron::ActivationFunction(double x)
 {
-    return x;
+    return x > 0 ? 1 : 0;
 }
