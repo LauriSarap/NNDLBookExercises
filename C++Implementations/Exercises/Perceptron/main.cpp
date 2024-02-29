@@ -5,12 +5,15 @@
 
 int main()
 {
-    Perceptron perceptron(2, 0, 0.01);
+    const int epochs = 100;
+    const double learning_rate = 0.1;
+    
+    Perceptron perceptron(2, 0, learning_rate);
 
     std::vector<std::vector<double>> inputs = {{-3, 2}, {-2, 4}, {-1, 6}, {1, 6}, {2, 4}, {3, 2}};
-    std::vector<double> outputs = {0, 0, 0, 1, 1, 1};
+    std::vector<double> outputs = {0, 0, 1, 1, 0, 0};
 
-    for (int i = 0; i < 100; ++i)
+    for (int i = 0; i < epochs; ++i)
     { 
         for (size_t j = 0; j < inputs.size(); ++j)
         {
